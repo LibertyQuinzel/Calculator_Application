@@ -21,40 +21,6 @@
 
   ---
 
-  ## Grading Expectations (Module 14)
-
-  This section mirrors the grading checklist and what you should submit.
-
-  1) Submission Completeness (50 pts)
-
-  - GitHub repository contains:
-    - BREAD endpoints for `/calculations` (server-side).
-    - Calculation model and DB wiring.
-    - Front-end UI demonstrating BREAD operations.
-    - Tests (unit, integration, Playwright E2E).
-    - GitHub Actions workflow file at `.github/workflows/ci.yml`.
-
-  - Screenshots (place under `docs/screenshots/`):
-    - `ci_success.png` — screenshot showing a successful GitHub Actions workflow run.
-    - `docker_push.png` — screenshot showing the Docker image pushed to Docker Hub.
-    - `ui_browse_add_edit_delete.png` — screenshots demonstrating BREAD operations in the UI.
-
-  - Documentation:
-    - `REFLECTION.md` — short reflection describing development steps, challenges, and decisions.
-    - `README.md` contains clear instructions on running the app, running tests locally, and a link to the Docker Hub repository.
-
-  2) Functionality of BREAD Operations (50 pts)
-
-  - Browse (GET /calculations): returns all calculations for the authenticated user.
-  - Read (GET /calculations/{id}): returns a single calculation if owned by the user.
-  - Edit (PUT /calculations/{id}): updates calculation fields; changes persist.
-  - Add (POST /calculations): creates a new calculation with operation and operands and stores the result.
-  - Delete (DELETE /calculations/{id}): removes a calculation owned by the user; non-owned resources are not affected.
-
-  For grading, the endpoints must enforce authentication and ownership: users must only see and modify their own calculations.
-
-  ---
-
   ## Quick local setup
 
   1. Create and activate a virtual environment (recommended):
