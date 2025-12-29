@@ -1,4 +1,4 @@
-  #BREAD Calculator, JWT Auth, and CI/CD
+  # BREAD Calculator, JWT Auth, and CI/CD
 
   This repository contains a FastAPI application that implements a simple calculator with user management (registration, login, and JWT-based authentication). It provides full BREAD functionality for calculations (Browse, Read, Edit, Add, Delete), a front-end UI demonstrating the flows, unit/integration/Playwright E2E tests, and a GitHub Actions CI workflow.
 
